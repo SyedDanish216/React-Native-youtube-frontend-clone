@@ -5,7 +5,7 @@ import { AntDesign } from "@expo/vector-icons";
 import { MaterialIcons } from "@expo/vector-icons";
 export default function Footer() {
   return (
-    <View style={styles.contanier}>
+    <View style={styles.container}>
       <View style={{width:"20%",position:"absolute",bottom:5,left:"0%",alignItems:"center"}}>
         <Entypo name="home" size={24} color="black" />
       </View>
@@ -31,6 +31,9 @@ const styles = StyleSheet.create({
   container: {
     position:"relative",
     justifyContent:"center",
-    alignItems:"center"
+    alignItems:"center",
+    backgroundColor:"white",
+    
+    height:35
   },
 });

@@ -10,7 +10,7 @@ import Footer from "../components/Footer";
 export default function Home({navigation}){
     return(
         <View style={{height:"100%"}}>
-        <View>
+        <View style={{height:"100%",display:"flex"}}>
             <HeaderTabs name={navigation} />
             <Categories />
             <Thumbnail />

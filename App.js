@@ -6,7 +6,11 @@ import Navigator from "./Navigator.js"
 
 
 export default function App() {
-  return  ( <Navigator />);
+  return  ( 
+  <>
+  <Navigator />
+  </>
+  );
 }
 
 

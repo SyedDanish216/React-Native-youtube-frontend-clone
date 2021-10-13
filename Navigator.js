@@ -8,7 +8,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from "./screens/Home"
 
 import Searchbar from "./screens/Searchbar";
-import HeaderTabs from "./components/HeaderTabs";
+
+import Searchdisplay from "./screens/Searchdisplay"
 
 const Stack = createNativeStackNavigator();
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Stack.Screen name="Home" options={{headerShown:false}} component={Home} />
          
           <Stack.Screen name="Details" options={{headerShown:false}} component={Searchbar} />
+          <Stack.Screen name="Searchresult" options={{headerShown:false}} component={Searchdisplay} />
         </Stack.Navigator>
       </NavigationContainer>
    )

@@ -59,17 +59,20 @@ const CategoryButton = (props) => {
                 padding: 6,
                 marginHorizontal: 10,
                 borderRadius:props.text==='Explore'?0:20,
+                display:"flex",
+                justifyContent:"center",
+                alignItems:"center",
+                textAlign:"center"
                 // color:props.activeTab === props.text ?"white":"black"
-                 
-
-                
-                
-
 
             }}
 
         >
-            <Text style={{ color: props.activeTab === props.text ? "white" : "black", fontWeight: "bold", fontSize: 18 }}>{props.text}</Text>
+            <Text style={{ color: props.activeTab === props.text ? "white" : "black", 
+            fontWeight: "bold",
+             fontSize: 18,
+             
+              }}>{props.text}</Text>
         </TouchableOpacity>
     )
 }
@@ -78,8 +81,11 @@ const styles = StyleSheet.create({
 
         flexDirection: "row",
         marginTop: 15,
-        
+        marginBottom:15,
+  
+
 
     },
+    
 
 })
